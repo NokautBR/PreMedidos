@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PreMedidos
+namespace PreMedidos.Visao
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Lógica interna para TelaPreMedidos.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TelaPreMedidos : Window
     {
-        public MainWindow()
+        public TelaPreMedidos()
         {
             InitializeComponent();
         }

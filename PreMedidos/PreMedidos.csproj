@@ -56,7 +56,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="Visao\TelaMenu.xaml.cs">
+      <DependentUpon>TelaMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\TelaPreMedidos.xaml.cs">
+      <DependentUpon>TelaPreMedidos.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Visao\TelaLogin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -64,10 +70,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Visao\TelaLogin.xaml.cs">
+      <DependentUpon>TelaLogin.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Visao\TelaMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Visao\TelaPreMedidos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -96,6 +110,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
