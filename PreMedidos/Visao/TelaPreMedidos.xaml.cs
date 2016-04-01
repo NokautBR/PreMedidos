@@ -23,5 +23,36 @@ namespace PreMedidos.Visao
         {
             InitializeComponent();
         }
+
+        private void TabExames_Loaded(object sender, RoutedEventArgs e)
+        {
+            var listExame = new List<TempExame>();
+            var temp = new TempExame();
+            temp.Tipo = new ComboBox();
+            temp.Tipo.Items.Add("Prévia");
+            temp.Tipo.Items.Add("Auto Serviço");
+            temp.Tipo.Items.Add("Exame Final");
+            listExame.Add(temp);
+            var grid = sender as DataGrid;
+            grid.ItemsSource = listExame;
+        }
+
+    }
+
+    class TempExame
+    {
+        public ComboBox Tipo { get; set; }
+        public ComboBox Produto { get; set; }
+        public ComboBox Marca { get; set; }
+        public String Valor { get; set; }
+        public ComboBox Dimensao { get; set; }
+        public String PEmbalagem { get; set; }
+        public ComboBox TEmbalagem { get; set; }
+        public ComboBox Portaria { get; set; }
+        public String Lote { get; set; }
+        public String Amostra { get; set; }
+        public String Resultado { get; set; }
+        public String Coletar { get; set; }
+        public String Termo { get; set; }
     }
 }
