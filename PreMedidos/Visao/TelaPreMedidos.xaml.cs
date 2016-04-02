@@ -37,6 +37,18 @@ namespace PreMedidos.Visao
             grid.ItemsSource = listExame;
         }
 
+        private void btnPesagem_Click(object sender, RoutedEventArgs e)
+        {
+            Visao.TelaPesagem pesagem = new TelaPesagem();
+            pesagem.Show();
+
+        }
+
+        private void btnFabricante_Click(object sender, RoutedEventArgs e)
+        {
+            Visao.TelaFabricante fabricante = new TelaFabricante();
+            fabricante.Show();
+        }
     }
 
     class TempExame

@@ -1,0 +1,69 @@
+﻿<Window x:Class="PreMedidos.Visao.TelaPesagem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PreMedidos.Visao"
+        mc:Ignorable="d"
+        Title="Produto: Macarrão Galo 1kg" Height="500" Width="500" MaxWidth="500" MaxHeight="500" Topmost="True" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <DataGrid Name="TabPesagem"  Loaded="TabPesagem_Loaded" AutoGenerateColumns="False" DockPanel.Dock="Top" ScrollViewer.VerticalScrollBarVisibility= "Auto" Height="250" MaxHeight="250">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Embalagem"></DataGridTextColumn>
+                    <DataGridTextColumn Header="P. Bruto"></DataGridTextColumn>
+                    <DataGridTextColumn Header="P. Líquido"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Resultado"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button DockPanel.Dock="Bottom" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Padding="5">Balança</Button>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <Grid DockPanel.Dock="Left" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Background="AliceBlue" Padding="10,0,0,0" Margin="10">Tolerância Individual</TextBlock>
+                <TextBlock Grid.Row="0" Grid.Column="1" Background="WhiteSmoke" Padding="10,0,0,0" Margin="10">985.0g (15g)</TextBlock>
+               
+                <TextBlock Grid.Row="1" Grid.Column="0" Background="AliceBlue" Padding="10,0,0,0" Margin="10">Tolerãncia Média</TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="1" Background="WhiteSmoke" Padding="10,0,0,0" Margin="10">996.0g (4g)</TextBlock>
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Background="AliceBlue" Padding="10,0,0,0" Margin="10">Desvio Padrão</TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="1" Background="WhiteSmoke" Padding="10,0,0,0" Margin="10">16.0g</TextBlock>
+            </Grid>
+            <Grid DockPanel.Dock="Right" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Background="AliceBlue" Padding="10,0,0,0" Margin="10">Média</TextBlock>
+                <TextBlock Grid.Row="0" Grid.Column="1" Background="WhiteSmoke" Padding="10,0,0,0" Margin="10">1003g</TextBlock>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Background="AliceBlue" Padding="10,0,0,0" Margin="10">Individual Mínimo</TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="1" Background="WhiteSmoke" Padding="10,0,0,0" Margin="10">993.0g</TextBlock>
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Background="AliceBlue" Padding="10,0,0,0" Margin="10">Resultado</TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="1" Background="WhiteSmoke" Padding="10,0,0,0" Margin="10">Aprovado</TextBlock>
+            </Grid>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Bottom">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <Button Margin="50,10,50,10" Padding="5">Gravar</Button>
+                <Button Margin="50,10,50,10" Padding="5">Voltar</Button>
+                <Button Margin="50,10,50,10" Padding="5">Cancelar</Button>
+            </StackPanel>
+        </DockPanel>
+    </DockPanel>
+</Window>

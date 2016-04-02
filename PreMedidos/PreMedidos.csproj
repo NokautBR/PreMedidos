@@ -56,12 +56,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Visao\TelaFabricante.xaml.cs">
+      <DependentUpon>TelaFabricante.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Visao\TelaMenu.xaml.cs">
       <DependentUpon>TelaMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Visao\TelaPesagem.xaml.cs">
+      <DependentUpon>TelaPesagem.xaml</DependentUpon>
     </Compile>
     <Compile Include="Visao\TelaPreMedidos.xaml.cs">
       <DependentUpon>TelaPreMedidos.xaml</DependentUpon>
     </Compile>
+    <Page Include="Visao\TelaFabricante.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Visao\TelaLogin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -75,6 +85,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Visao\TelaMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Visao\TelaPesagem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
